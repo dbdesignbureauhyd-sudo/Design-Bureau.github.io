@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Design Bureau | Architecture & Engineering</title>
+
+<meta name="description" content="Design Bureau is a multidisciplinary consultancy offering Architecture, Civil & Structural Engineering, Interior Design, Estimation and Project Management services.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#182333;
+    background:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,.97);
+    box-shadow:0 2px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+    height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:#172f4d;
+}
+
+.logo span{
+    color:#b88a42;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#b88a42;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    padding-top:78px;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(90deg,rgba(8,22,38,.94),rgba(8,22,38,.65)),
+    url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=85");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero-tag{
+    color:#d5aa66;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:clamp(48px,7vw,82px);
+    line-height:1.02;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#d5aa66;
+}
+
+.hero p{
+    max-width:720px;
+    color:#e5eaf0;
+    font-size:19px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 28px;
+    border-radius:4px;
+    font-weight:700;
+    display:inline-block;
+    transition:.3s;
+}
+
+.btn-gold{
+    background:#b88a42;
+    color:#fff;
+}
+
+.btn-gold:hover{
+    background:#966d2f;
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#172f4d;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-heading small{
+    color:#b88a42;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:700;
+}
+
+.section-heading h2{
+    font-size:44px;
+    color:#172f4d;
+    margin:8px 0 12px;
+}
+
+.section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#697586;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:65px;
+    align-items:center;
+}
+
+.about-image{
+    height:480px;
+    border-radius:8px;
+    background:
+    linear-gradient(rgba(20,47,77,.2),rgba(20,47,77,.35)),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85");
+    background-size:cover;
+    background-position:center;
+}
+
+.about-content h3{
+    color:#172f4d;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    color:#687586;
+    margin-bottom:18px;
+}
+
+.about-points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:25px;
+}
+
+.about-point{
+    padding:15px;
+    background:#f5f6f8;
+    border-left:3px solid #b88a42;
+    font-weight:600;
+}
+
+/* SERVICES */
+
+.services{
+    background:#f6f7f9;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.service-card{
+    background:#fff;
+    padding:35px 25px;
+    border:1px solid #e5e7eb;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+.service-icon{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    color:#172f4d;
+    font-size:21px;
+    margin-bottom:12px;
+}
+
+.service-card p{
+    color:#697586;
+    font-size:15px;
+}
+
+/* EXPERIENCE */
+
+.experience{
+    background:#172f4d;
+    color:#fff;
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+    gap:30px;
+}
+
+.experience-item h3{
+    font-size:48px;
+    color:#d5aa66;
+}
+
+.experience-item p{
+    color:#d9e0e8;
+}
+
+/* PROJECTS */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.project-card{
+    overflow:hidden;
+    border:1px solid #e3e6ea;
+    background:#fff;
+}
+
+.project-image{
+    height:250px;
+    background-size:cover;
+    background-position:center;
+    transition:.5s;
+}
+
+.project-card:hover .project-image{
+    transform:scale(1.04);
+}
+
+.project-info{
+    padding:24px;
+}
+
+.project-info small{
+    color:#b88a42;
+    font-weight:700;
+}
+
+.project-info h3{
+    color:#172f4d;
+    margin:7px 0;
+}
+
+.project-info p{
+    color:#697586;
+    font-size:14px;
+}
+
+/* PROCESS */
+
+.process{
+    background:#f6f7f9;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.process-item{
+    background:#fff;
+    padding:30px;
+    border-top:3px solid #b88a42;
+}
+
+.process-number{
+    font-size:14px;
+    font-weight:800;
+    color:#b88a42;
+}
+
+.process-item h3{
+    color:#172f4d;
+    margin:10px 0;
+}
+
+.process-item p{
+    color:#697586;
+    font-size:14px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#172f4d;
+    color:#fff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.contact h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact-text{
+    color:#dce3ea;
+}
+
+.contact-details{
+    margin-top:30px;
+}
+
+.contact-details div{
+    margin:20px 0;
+}
+
+.contact-details strong{
+    display:block;
+    color:#d5aa66;
+}
+
+.contact-form{
+    background:#fff;
+    padding:35px;
+    border-radius:6px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    font-family:inherit;
+}
+
+.contact-form textarea{
+    height:130px;
+}
+
+.contact-form .btn{
+    border:none;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b1d30;
+    color:#ccd5df;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#d5aa66;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .experience-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .service-grid,
+    .project-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-points{
+        grid-template-columns:1fr;
+    }
+
+    .experience-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+    }
+
+    .about-image{
+        height:330px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+DESIGN <span>BUREAU</span>
+</a>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-tag">
+Architecture • Engineering • Interiors
+</div>
+
+<h1>
+Designing Ideas.<br>
+Engineering <span>Possibilities.</span>
+</h1>
+
+<p>
+Design Bureau is a multidisciplinary consultancy providing
+Architecture, Civil & Structural Engineering, Interior Design,
+Estimation and Project Management services.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services" class="btn btn-gold">
+Explore Services
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Start Your Project
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>Who We Are</small>
+
+<h2>Design With Purpose</h2>
+
+<p>
+Creative thinking combined with engineering precision
+to develop functional and practical spaces.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="about-image"></div>
+
+<div class="about-content">
+
+<h3>Architecture, Engineering & Project Excellence</h3>
+
+<p>
+Design Bureau is a multidisciplinary consultancy offering
+Architecture, Civil & Structural Engineering, Interior Design,
+Estimation and Project Management services.
+</p>
+
+<p>
+Our approach combines creativity, technical expertise,
+construction knowledge and project coordination to deliver
+efficient and practical solutions.
+</p>
+
+<div class="about-points">
+
+<div class="about-point">Creative Architecture</div>
+
+<div class="about-point">Structural Engineering</div>
+
+<div class="about-point">Interior Design</div>
+
+<div class="about-point">Project Management</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>Our Expertise</small>
+
+<h2>What We Do</h2>
+
+<p>
+Integrated professional services from concept and design
+through engineering and project execution.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+<div class="service-card">
+
+<div class="service-icon">🏛️</div>
+
+<h3>Architecture</h3>
+
+<p>
+Architectural planning, floor plans, elevations,
+building concepts and development solutions.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🏗️</div>
+
+<h3>Engineering</h3>
+
+<p>
+Civil and structural engineering, RCC design,
+analysis, detailing and technical consultancy.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🛋️</div>
+
+<h3>Interior Design</h3>
+
+<p>
+Functional and contemporary interior solutions
+for residential, commercial and professional spaces.
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">📋</div>
+
+<h3>Project Management</h3>
+
+<p>
+Planning, estimation, scheduling, coordination,
+site supervision and project execution support.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+
+<div class="container">
+
+<div class="experience-grid">
+
+<div class="experience-item">
+<h3>6+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="experience-item">
+<h3>200+</h3>
+<p>Projects Designed</p>
+</div>
+
+<div class="experience-item">
+<h3>G+5</h3>
+<p>Building Design Experience</p>
+</div>
+
+<div class="experience-item">
+<h3>360°</h3>
+<p>Project Consultancy</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>Selected Work</small>
+
+<h2>Project Portfolio</h2>
+
+<p>
+A glimpse of the diverse project categories
+supported by Design Bureau.
+</p>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<div class="project-card">
+
+<div class="project-image"
+style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85');">
+</div>
+
+<div class="project-info">
+
+<small>ARCHITECTURE</small>
+
+<h3>Residential Buildings</h3>
+
+<p>
+Planning, architectural design and structural
+engineering for modern residential projects.
+</p>
+
+</div>
+</div>
+
+
+<div class="project-card">
+
+<div class="project-image"
+style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85');">
+</div>
+
+<div class="project-info">
+
+<small>ENGINEERING</small>
+
+<h3>Commercial Buildings</h3>
+
+<p>
+Integrated architectural and structural solutions
+for commercial developments.
+</p>
+
+</div>
+</div>
+
+
+<div class="project-card">
+
+<div class="project-image"
+style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85');">
+</div>
+
+<div class="project-info">
+
+<small>INFRASTRUCTURE</small>
+
+<h3>Infrastructure Projects</h3>
+
+<p>
+Engineering consultancy for roads, drainage,
+urban development and public infrastructure.
+</p>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>Our Approach</small>
+
+<h2>From Concept to Completion</h2>
+
+</div>
+
+
+<div class="process-grid">
+
+<div class="process-item">
+
+<div class="process-number">01 / DISCOVER</div>
+
+<h3>Understand</h3>
+
+<p>
+We understand your requirements, site conditions,
+budget and project objectives.
+</p>
+
+</div>
+
+
+<div class="process-item">
+
+<div class="process-number">02 / DESIGN</div>
+
+<h3>Design</h3>
+
+<p>
+Our team develops architectural, structural and
+interior design solutions.
+</p>
+
+</div>
+
+
+<div class="process-item">
+
+<div class="process-number">03 / ENGINEER</div>
+
+<h3>Develop</h3>
+
+<p>
+We coordinate engineering, estimation,
+documentation and technical requirements.
+</p>
+
+</div>
+
+
+<div class="process-item">
+
+<div class="process-number">04 / DELIVER</div>
+
+<h3>Execute</h3>
+
+<p>
+Project coordination and management support
+through execution and completion.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div>
+
+<h2>
+Let's Build Something<br>
+Remarkable.
+</h2>
+
+<p class="contact-text">
+Have a project in mind? Talk to Design Bureau
+about your architecture, engineering, interior
+design or project management requirements.
+</p>
+
+<div class="contact-details">
+
+<div>
+<strong>Phone</strong>
+YOUR PHONE NUMBER
+</div>
+
+<div>
+<strong>Email</strong>
+YOUR EMAIL ADDRESS
+</div>
+
+<div>
+<strong>Location</strong>
+Hyderabad, Telangana, India
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea placeholder="Tell us about your project"></textarea>
+
+<a href="#" class="btn btn-gold">
+Send Enquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 <strong>Design Bureau</strong> |
+Architecture • Engineering • Interiors • Project Management
+</p>
+
+<p>
+Hyderabad, Telangana, India
+</p>
+
+</footer>
+
+</body>
+</html>
