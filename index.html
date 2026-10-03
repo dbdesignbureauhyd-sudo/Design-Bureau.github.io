@@ -54,14 +54,18 @@ header{
 }
 
 .logo{
-    font-size:25px;
-    font-weight:800;
-    letter-spacing:1px;
-    color:#172f4d;
+    display:flex;
+    align-items:center;
+    width:230px;
+    height:68px;
 }
 
-.logo span{
-    color:#b88a42;
+.logo img{
+    width:230px;
+    height:68px;
+    object-fit:contain;
+    object-position:center;
+    display:block;
 }
 
 .nav-links{
@@ -522,8 +526,8 @@ footer strong{
 <header>
 <div class="container navbar">
 
-<a href="#home" class="logo">
-DESIGN <span>BUREAU</span>
+<a href="#home" class="logo" aria-label="Design Bureau">
+<img src="Luxury%20Architectural%20Design%20Bureau%20Logo.png" alt="Design Bureau Logo">
 </a>
 
 <ul class="nav-links">
