@@ -272,8 +272,17 @@ padding:90px 0 60px;
     transform:scale(1);
 }
 .hero-slide.active .hero-content{
-    opacity:1;
-    transform:translateY(0);
+    animation:heroTextIn 1s ease forwards;
+}
+@keyframes heroTextIn{
+    from{
+        opacity:0;
+        transform:translateY(28px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 .hero-overlay{
     position:absolute;
@@ -305,7 +314,7 @@ padding:90px 0 60px;
     justify-content:flex-start;
     opacity:0;
     transform:translateY(25px);
-    transition:opacity .9s ease, transform .9s ease;
+    transition:none;
 }
 
 /* Hero typography */
