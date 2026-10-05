@@ -615,15 +615,24 @@ section{
 .about-points{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:15px;
-    margin-top:25px;
+    gap:14px;
+    margin-top:30px;
 }
 
 .about-point{
-    padding:15px;
-    background:#f5f6f8;
-    border-left:3px solid #b88a42;
+    padding:16px 18px;
+    background:#f7f8fa;
+    border-left:3px solid #d2ae68;
+    color:#172f4d;
+    font-size:14px;
     font-weight:600;
+    transition:.3s ease;
+}
+
+.about-point:hover{
+    background:#172f4d;
+    color:#fff;
+    transform:translateX(4px);
 }
 
 /* SERVICES */
