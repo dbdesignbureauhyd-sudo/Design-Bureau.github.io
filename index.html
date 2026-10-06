@@ -72,13 +72,22 @@ header{
 
 .nav-links{
     display:flex;
-    gap:30px;
-    list-style:none;
-    flex-wrap:nowrap;
-    white-space:nowrap;
-    align-items:center;
+    position:absolute;
+    top:58px;
+    left:0;
+    width:100%;
+    justify-content:center;
+    gap:12px;
+    padding:10px 5px;
+    background:rgba(5,17,32,.88);
+    backdrop-filter:blur(8px);
 }
 
+.nav-links a{
+    font-size:11px;
+    color:#fff;
+    white-space:nowrap;
+}
 .nav-links a{
     font-size:14px;
     font-weight:600;
