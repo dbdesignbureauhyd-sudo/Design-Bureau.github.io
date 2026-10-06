@@ -965,6 +965,20 @@ footer strong{
 /* MOBILE */
 
 @media(max-width:900px){
+    .hero-slide .hero-content{
+    opacity:1 !important;
+    transform:none !important;
+}
+
+.hero-slide.active .hero-content,
+.hero-slide.active .hero-kicker,
+.hero-slide.active h1,
+.hero-slide.active h2,
+.hero-slide.active p,
+.hero-slide.active .hero-buttons{
+    opacity:1 !important;
+    animation:none !important;
+}
     .nav-links{
     display:flex !important;
     position:absolute;
