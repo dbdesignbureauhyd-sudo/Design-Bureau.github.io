@@ -856,27 +856,52 @@ section{
 /* CONTACT */
 
 .contact{
-    background:#172f4d;
+    background:
+        linear-gradient(rgba(23,47,77,.94),rgba(23,47,77,.94)),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=85");
+    background-size:cover;
+    background-position:center;
     color:#fff;
 }
 
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
+    gap:80px;
+    align-items:center;
 }
 
 .contact h2{
-    font-size:42px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:44px;
+    line-height:1.15;
+    font-weight:500;
     margin-bottom:20px;
 }
-
 .contact-text{
-    color:#dce3ea;
+    color:rgba(255,255,255,.78);
+    font-size:16px;
+    line-height:1.8;
+    max-width:560px;
 }
 
 .contact-details{
-    margin-top:30px;
+    margin-top:32px;
+    display:grid;
+    gap:14px;
+}
+
+.contact-details div{
+    padding:16px 20px;
+    border-left:3px solid #d2ae68;
+    background:rgba(255,255,255,.06);
+    color:#fff;
+    transition:.3s ease;
+}
+
+.contact-details div:hover{
+    background:rgba(255,255,255,.11);
+    transform:translateX(5px);
 }
 
 .contact-details div{
@@ -1517,8 +1542,16 @@ about your architecture, engineering, interior
 design or project management requirements.
 </p>
 
-<div class="contact-details">
+<div>
+    <strong>Contact Person</strong><br>
+    Mohammad Ghouse
+</div>
 
+<div>
+    <strong>Phone</strong><br>
+    +91 97002 54506
+</div>
+    
 <div>
 <strong>Phone</strong>
 YOUR PHONE NUMBER
